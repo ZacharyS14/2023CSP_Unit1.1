@@ -22,10 +22,16 @@ for t in my_turtles:
   t.goto(startx, starty)
   t.right(45)
   t.forward(50)
+  for c in turtle_colors:
+    t = trtl.Turtle(color=c)
+    my_turtles.append(t)
 
-#bend of line
-  startx = startx + 50
-  starty = starty + 50
+
+
+  #bend of line
+  startx = t.xcor()
+  starty = t.ycor()
+
 
 wn = trtl.Screen()
 wn.mainloop()
