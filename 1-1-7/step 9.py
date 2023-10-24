@@ -11,21 +11,24 @@ turtle_colors = ["red", "blue", "green", "orange", "purple", "gold"]
 
 for s in turtle_shapes:
   t = trtl.Turtle(shape=s)
+  t.penup()
+  t.color(turtle_colors.pop())
   my_turtles.append(t)
 
 #starting position
 startx = 0
 starty = 0
+direction = 90
 
 #create turtle
 for t in my_turtles:
   t.goto(startx, starty)
+  t.setheading(direction)
+  t.pendown()
   t.right(45)
   t.forward(50)
-  for c in turtle_colors:
-    t = trtl.Turtle(color=c)
-    my_turtles.append(t)
-
+  my_turtles.append(t)
+  direction = t.heading()
 
 
   #bend of line
