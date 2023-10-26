@@ -46,8 +46,9 @@ for step in range(50):
         for vt in vert_turtles:
             ht.forward(distance)
             vt.forward(distance)
-            #look for colision
-if(abs(ht.my_turtle.xcor())
-trtl.abs()
+        #look for colision
+        if distance
+
+
 wn = trtl.Screen()
 wn.mainloop()
