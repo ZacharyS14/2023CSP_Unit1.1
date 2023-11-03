@@ -34,6 +34,9 @@ guy.left(90)
 guy.forward(50)
 guy.left(90)
 guy.forward(50)
+guy.left(270)
+
+
 
 
 wn = trtl.Screen()
